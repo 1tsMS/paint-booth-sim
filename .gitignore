@@ -1,0 +1,10 @@
+# local only: old versions, raw car files, private assessment brief
+archive/
+
+# large exports (shared via Google Drive instead)
+simulation/exports/
+
+# Blender autosaves and Python cache
+*.blend1
+__pycache__/
+*.pyc
