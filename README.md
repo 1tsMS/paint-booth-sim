@@ -10,6 +10,8 @@ Robotic painting cell for a car body, built in RoboDK for the Yuktii AI Labs rob
 
 *Part of `Main_Paint`, rendered from RoboDK's HTML export.*
 
+Technical report: [Technical Report - Robotic Car Painting Cell.pdf](docs%20n%20images/Technical%20Report%20-%20Robotic%20Car%20Painting%20Cell.pdf)
+
 ## What the simulation does
 
 A car body rides in on a conveyor, stops in the booth, gets painted panel by panel, and leaves through the exit.
