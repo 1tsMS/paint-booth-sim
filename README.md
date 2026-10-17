@@ -6,6 +6,10 @@ Robotic painting cell for a car body, built in RoboDK for the Yuktii AI Labs rob
 - **Software used:** RoboDK 6.1 (simulation + offline programming), Python RoboDK API, Fusion 360 (booth and conveyor models), Blender (car model cleanup)
 - **Robot selected:** ABB IRB 5500-27 paint robot on an ABB IRBT 7004 linear track (7th axis)
 
+![Paint simulation](docs%20n%20images/paint_simulation.gif)
+
+*Part of `Main_Paint`, rendered from RoboDK's HTML export.*
+
 ## What the simulation does
 
 A car body rides in on a conveyor, stops in the booth, gets painted panel by panel, and leaves through the exit.
@@ -70,6 +74,8 @@ Robot links vs car, booth and conveyor stay checked.
 
 Rough transfer efficiency from the spray stats: about 70% of particles land on the body. That's a simulation estimate, not a measured number.
 
+About the car model: it's a free model I picked from Sketchfab, not engineering CAD. It has a lot of geometry issues (messy mesh, very uneven triangle density), so the spray doesn't stick properly on a few parts of the body even when the gun is in the right place. That's the mesh, not the paths. A clean CAD body would fix it.
+
 ## Repo layout
 
 ```
@@ -80,8 +86,11 @@ models/car/                    car body (source .glb, cleaned .obj/.blend), lice
 models/booth/                  booth STEP and wall STLs
 models/conveyor/               conveyor rails, supports and cart STLs
 models/robodk_library/         robot, track and gun files from the RoboDK library
-docs/screenshots/              screenshots for the report
+docs n images/screenshots/     RoboDK and Fusion 360 screenshots
+docs n images/paint_simulation.gif
 ```
+
+The demo video (about 200 MB) and the RoboDK HTML exports (55 MB each) are too big for GitHub, so they're on Google Drive with the rest of the submission.
 
 ## Running it
 

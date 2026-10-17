@@ -1,8 +1,9 @@
 # local only: old versions, raw car files, private assessment brief
 archive/
 
-# large exports (shared via Google Drive instead)
+# large exports and the demo video (shared via Google Drive instead)
 simulation/exports/
+docs n images/Video/
 
 # Blender autosaves and Python cache
 *.blend1
